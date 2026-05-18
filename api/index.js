@@ -3,6 +3,12 @@
 // export default app;
 
 
-export default (req, res) => {
-  res.json({ message: "working" });
-};
+import express from 'express';
+
+const app = express();
+
+app.get('/api/test', (req, res) => {
+  res.json({ message: "express working" });
+});
+
+export default app;
