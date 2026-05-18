@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import authRoutes from '../server/routes/authRoutes.js';
 import orderRoutes from '../server/routes/orderRoutes.js';
 import productRoutes from '../server/routes/productRoutes.js';
@@ -8,9 +9,9 @@ import productRoutes from '../server/routes/productRoutes.js';
 dotenv.config();
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
-// Connect to DB only when needed
 const connectDB = async () => {
   if (mongoose.connection.readyState === 0) {
     await mongoose.connect(process.env.MONGO_URI);
