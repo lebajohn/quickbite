@@ -27,4 +27,8 @@ app.get("/", (req, res) => {
   res.send("API Running...");
 });
 
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Server is working" });
+});
+
 export default app;
