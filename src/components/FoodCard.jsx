@@ -29,7 +29,7 @@ const FoodCard = ({ food, openDetails }) => {
 
           <div className="flex justify-between items-center mb-4">
             <span className="text-amber-400 text-xl font-bold">
-              ${food.price}
+              ksh{food.price}
             </span>
 
             <span>

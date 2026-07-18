@@ -227,7 +227,7 @@ const AdminProducts = ({
                 </h2>
 
                 <p className="text-amber-400 mb-2">
-                  ${product.price}
+                  ksh{product.price}
                 </p>
 
                 <div className="flex gap-3 mt-4">

@@ -31,7 +31,7 @@ const CartDrawer = ({
               >
                 <div className="flex justify-between mb-2">
                   <h3>{item.name}</h3>
-                  <span>${item.price}</span>
+                  <span>ksh{item.price}</span>
                 </div>
 
                 <div className="flex items-center gap-3 mt-4">
@@ -71,7 +71,7 @@ const CartDrawer = ({
 
         <div className="mt-10 border-t border-white/10 pt-6">
           <h3 className="text-2xl mb-6">
-            Subtotal: ${subtotal.toFixed(2)}
+            Subtotal: ksh{subtotal.toFixed(2)}
           </h3>
 
           <button

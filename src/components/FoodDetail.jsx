@@ -57,7 +57,7 @@ const FoodDetail = ({ food, addToCart, backToMenu, isLoggedIn, setCurrentPage })
         <div>
           <h1 className="text-5xl font-serif mb-6">{food.name}</h1>
           <p className="text-gray-300 text-lg mb-6">{food.description}</p>
-          <p className="text-4xl text-amber-400 font-bold mb-6">${food.price}</p>
+          <p className="text-4xl text-amber-400 font-bold mb-6">ksh{food.price}</p>
 
           <div className="mb-8">
             <p className="text-sm text-gray-400 mb-2">

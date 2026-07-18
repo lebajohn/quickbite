@@ -111,7 +111,7 @@ const AdminDashboard = ({
             </div>
             <div>
               <p className="text-gray-400 mb-1">Revenue</p>
-              <h2 className="text-4xl font-bold text-amber-400">${totalSales}</h2>
+              <h2 className="text-4xl font-bold text-amber-400">ksh{totalSales}</h2>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@ const AdminDashboard = ({
                         className="flex justify-between border-b border-white/10 pb-2 text-sm"
                       >
                         <p>{item.name} × {item.quantity}</p>
-                        <p>${item.price * item.quantity}</p>
+                        <p>ksh{item.price * item.quantity}</p>
                       </div>
                     ))}
                   </div>
@@ -195,7 +195,7 @@ const AdminDashboard = ({
 
                       <div className="flex items-center gap-2 mt-2">
                         <FiDollarSign className="text-[15px] text-amber-400" />
-                        <p>Total: <span className="text-amber-400 ml-2 font-bold">${order.totalPrice}</span></p>
+                        <p>Total: <span className="text-amber-400 ml-2 font-bold">ksh{order.totalPrice}</span></p>
                       </div>
                     </div>
 

@@ -67,7 +67,7 @@ const OrdersPage = ({ orders, setCurrentPage }) => {
                       </p>
 
                       <p>
-                        $
+                        ksh
                         {item.price * item.quantity}
                       </p>
                     </div>
@@ -76,7 +76,7 @@ const OrdersPage = ({ orders, setCurrentPage }) => {
 
                 <div className="mt-4 text-right">
                   <span className="text-amber-400 font-bold text-xl">
-                    Total: ${order.totalPrice}
+                    Total: ksh{order.totalPrice}
                   </span>
                 </div>
               </div>
